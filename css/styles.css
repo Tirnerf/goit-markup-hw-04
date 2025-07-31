@@ -145,13 +145,13 @@ a {
     text-decoration: none;    
 }
 .hero {
-    display: flex; /* Flexbox kullanımı */    
-    background-color: #2E2F42B2;
+    display: flex; /* Flexbox kullanımı */   
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url("/images/bghero.jpg"); /* Arka plan resmi */
+    url("/images/bghero.jpg"); /* Arka plan resmi */ 
+    background-color: #2E2F42B2;    
     background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
+    background-position: center;
+    background-size: cover;
     justify-content: center; /* Dikey ortalama */
     align-items: center; /* Yatay ortalama */
     flex-direction: column; /* Dikey hizalama */
