@@ -152,7 +152,9 @@ a {
     gap: 20px; /* Elemanlar arası boşluk */
     line-height: 2.5;
     margin: 0 auto; /* Ortalamak için */
-    background-color: #2E2F42;
+    background: 
+        linear-gradient(rgba(46,47,66,0.7), rgba(46,47,66,0.7)), 
+        url("../images/people-office.jpg");
     width: 1440px; /* Genişlik 1440px */
     height: 600px;
     text-align: center;
@@ -183,17 +185,6 @@ a {
     background-color: #404BBF;
     cursor: pointer;    
 }
-.strategy-line{
-    display: flex;
-    justify-content: center;
-    margin: 100px 126px 100px 126px; /* Üst, sağ, alt, sol kenar boşlukları */
-}
-
-.strategy-block{
-    width: 260px;
-    margin: 12;
-    letter-spacing: normal;
-}
 .our-teams-section{
     background-color:  #f4f4fd;
 }
@@ -216,11 +207,14 @@ a {
     display: flex;
     flex-direction: column;
     width: 260px;
-    height: 380px;
+    height: 428px;
     background-color: #FFFFFF;
     margin: 14px;
     letter-spacing: normal;
     align-items: center;
+    box-shadow: 0px 2px 1px 0px #2E2F4214;
+    box-shadow: 0px 1px 1px 0px #2E2F4229;
+    box-shadow: 0px 1px 6px 0px #2E2F4214;
 }
 .our-teams-text{
  text-align: center;
@@ -276,8 +270,23 @@ a {
     border-left: 1px solid #E7E9FC;
     border-right: 1px solid #E7E9FC;
 }
-.footer-section{
-    background-color:  #2E2F42;
+.footer-section {
+    background-color: #2E2F42;
+    
+    width: 100%;
+    margin: 0 auto;
+}
+
+.footer-main {
+    display: flex;
+    justify-content: flex-start;  /* sola hizala, arada boşluk bırak */
+    align-items: flex-start;
+    gap: 100px; /* aradaki boşluğu ayarla, gerekirse artır/azalt */
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 60px 150px ; /* üst/alt 60px sağ/sol 48px boşluk */
+    box-sizing: border-box;
+    text-align: left;
 }
 .footer{
     display: flex;
@@ -290,10 +299,21 @@ a {
     height: 312px;    
     background-color:  #2E2F42;
 }
-.footer-text{
-    display: block;
+.footer-text {
     width: 264px;
-    height: 112px;
+}
+.footer-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    margin-left: 40px;
+}
+.footer-social-title {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 12px;
 }
 .logo-studio-footer{
     font-family: "Raleway", sans-serif;
@@ -313,4 +333,83 @@ a {
     letter-spacing: 2%;
     line-height: 24px;
 
+}
+.icon-clock, .icon-antenna, .icon-astronaut, .icon-diagram {
+    width: 64px;
+    height: 64px;
+}
+.iconlarim-item{
+    border: #8e8f99 1px solid;
+    display: inline-block;
+    width: 264px;
+    height: 112px;    
+    border-radius: 4px;
+    background-color: #f4f4fd    ;
+    justify-content: center;
+    align-content: center;
+}
+.iconlarim{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+}
+
+.iconlarim-text{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    display: inline-block;
+    width: 264px;
+    height: 112px;    
+    display: inline-block;
+    background-color: #ffffff ;
+    justify-content: center;
+    align-content: center;    
+    font-family: "Roboto", sans-serif;
+    text-align: left;
+    
+}
+
+.iconlarim-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Dikey hizalama */ 
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 100%;
+    
+}
+
+.sosyal-medya{
+    display: flex;
+    gap: 24px; /* Elemanlar arası boşluk */
+    margin-top: 10px;
+}
+.sosyal-medya .sosyal-medya-items{
+    border-radius: 50%;
+    list-style-type: none;
+    width: 40px;
+    height: 40px;
+    background-color: #4D5AE5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sosyal-medya .sosyal-medya-items .icon-linkedin{
+    width: 16px;
+    height: 16px;
+}
+.sosyal-medya .sosyal-medya-items .icon-twitter{
+    width: 16px;
+    height: 16px;
+}
+.sosyal-medya .sosyal-medya-items .icon-facebook{
+    width: 16px;
+    height: 16px;
+}
+.sosyal-medya .sosyal-medya-items .icon-instagram{
+    width: 16px;
+    height: 16px;
 }
